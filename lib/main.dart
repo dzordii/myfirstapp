@@ -37,8 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
   List frases = [
     'O mundo está nas mãos daqueles que têm a coragem de sonhar e correr o risco de viver seus sonhos.',
     'A vida é um eco. Se você não está gostando do que está recebendo, observe o que está emitindo.',
-    'A vida é um eco. Se você não está gostando do que está recebendo, observe o que está emitindo.',
-    'A vida é um eco. Se você não está gostando do que está recebendo, observe o que está emitindo.',
+    'Outra frase qualquer',
+    'Mais uma frase qualquer',
   ];
 
   void _incrementCounter() {
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text('Pressione o botão para gerar uma frase:'),
             Text(
-              '$_numeroAleatorio',
+              frases[_numeroAleatorio],
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
